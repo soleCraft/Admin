@@ -1,0 +1,625 @@
+/* Mobile medium*/
+@media screen and (min-width: 375px) {
+    .logo-container {
+        top: 1.50rem;
+        left: 0.70rem;
+        width: 4rem;
+    }
+    
+    .title-container {
+        height: 10%;
+    }
+
+    .title-container h1 {
+        font-size: 1.50rem;
+     }
+
+     .p-container {
+        height: 7%;
+        width: 100%;
+        font-size: .90rem;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 15.25rem;
+    }
+
+    .register-container button {
+        font-size: .96rem;
+    }
+
+    .login-container {
+        height: 3.20rem;
+        width: 15.25rem;
+    }
+
+    .login-container button {
+        font-size: .96rem;
+    }
+
+    .img-container {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .event-card {
+        width: 80%;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.70rem;
+    }
+
+    .learnMore-container button {
+        font-size: .80rem;
+        letter-spacing: .07rem;
+    }
+}
+
+/* Mobile large*/
+@media screen and (min-width: 425px) {
+
+    .logo-container {
+        top: 1.60rem;
+        left: 0.80rem;
+        width: 4.40rem;
+        height: 4rem;
+    }
+
+    .title-container {
+        height: 12%;
+    }
+
+    .title-container h1 {
+        font-size: 1.75rem;
+     }
+
+     .p-container {
+        height: 9%;
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .register-container {
+        height: 3.25rem;
+        width: 16.30rem;
+    }
+
+    .register-container button {
+        font-size: .96rem;
+    }
+
+    .login-container {
+        height: 3.25rem;
+        width: 16.30rem;
+    }
+
+    .login-container button {
+        font-size: .96rem;
+    }
+
+    .img-container {
+        background-size: contain;
+        background-position: center;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.90rem;
+    }
+
+    
+    .event-card {
+        width: 70%;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .event-card {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 539px) {
+    .event-card {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 590px) {
+    .event-card {
+        width: 45%;
+    }
+}
+ 
+
+@media screen and (min-width: 651px) {
+    .socials_container {
+        gap: 2.50rem
+    }
+
+    .developers_container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .event-card {
+        width: 40%;
+    }
+}
+
+
+/* Tablet*/
+@media screen and (min-width: 768px) {
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .logo-container {
+        top: 1.50rem;
+        left: .80rem;
+        width: 4rem;
+        height: 115px;
+    }
+
+    .first-container {
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .title-container {
+        height: 27%;
+        width: 95%;
+        text-align: start;
+    }
+
+    .title-container h1 {
+       font-size: 2.50rem;
+    }
+
+    .p-container {
+        height: 10%;
+        width: 95%;
+        font-size: 1rem;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        height: 20%;
+        width: 95%;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 10rem;
+        margin-right:2vw;
+    }
+
+    .register-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    
+    .login-container {
+        height: 3.30rem;
+        width: 10rem;
+    }
+
+    .login-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    .img-container {
+        height: 41vw;
+        width: 49%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .wrapper-2 {
+        position: relative;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.60rem;
+        position: absolute;
+        top: 3rem;
+        left: 2.10rem;
+    }
+
+    .scroller {
+        width: 95%;
+    }
+    
+    .event-card {
+        width: 40%;
+        cursor: pointer;
+        border: solid 1px #444444;
+        padding-bottom: 20px;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+
+    .left-container {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 728px) {
+    .event-card {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 728px) {
+    .event-card {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 784px) {
+    .event-card {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .event-card {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .event-card {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .event-card {
+        width: 25%;
+    }
+}
+
+
+/* Laptop*/
+@media screen and (min-width: 1024px) {
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .logo-container {
+        top: 1.50rem;
+        left: .80rem;
+        width: 5rem;
+        height: 115px;
+    }
+
+    .first-container {
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .title-container {
+        height: 30%;
+        width: 95%;
+        text-align: start;
+    }
+
+    .title-container h1 {
+       font-size: 2.80rem;
+    }
+
+    .p-container {
+        height: 10%;
+        width: 95%;
+        font-size: 1.20rem;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        height: 20%;
+        width: 95%;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 10rem;
+        margin-right:2vw;
+    }
+
+    .register-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    
+    .login-container {
+        height: 3.30rem;
+        width: 10rem;
+    }
+
+    .login-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    .img-container {
+        height: 70%;
+        width: 49%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .wrapper-2 {
+        position: relative;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.80rem;
+        position: absolute;
+        top: 3rem;
+        left: 2.10rem;
+    }
+
+    .scroller {
+        width: 90%;
+        gap: 1rem;
+    }
+    
+    .event-card {
+        width: 27%;
+        cursor: pointer;
+        border: solid 1px #444444;
+        padding-bottom: 20px;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+
+    .right-container {
+        width: 30%;
+        height: 100%;
+    }
+
+    .socials_container {
+        gap: 2.50rem
+    }
+
+    .developers_container {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1086px) {
+    .event-card {
+        width: 23%;
+    }
+}
+
+
+@media screen and (min-width: 1231px) {
+    .socials_container {
+        gap: 2.50rem
+    }
+
+    .developers_container {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1272px) {
+    .event-card {
+        width: 20%;
+    }
+}
+
+
+/* Large laptop to larger screens*/
+@media screen and (min-width: 1300px) {
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 650px;
+    }
+
+    .logo-container {
+        top: 1.50rem;
+        left: 3.50rem;
+        width: 6rem;
+        height: 115px;
+    }
+
+    .first-container {
+        height: 80%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-container {
+        height: 30%;
+        width: 100%;
+        text-align: start;
+    }
+
+    .title-container h1 {
+       font-size: 3rem;
+    }
+
+    .p-container {
+        height: 10%;
+        width: 100%;
+        font-size: 1.50rem;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        height: 20%;
+        width: 100%;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 10rem;
+        margin-right:2vw;
+    }
+
+    .register-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    
+    .login-container {
+        height: 3.30rem;
+        width: 10rem;
+    }
+
+    .login-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    .img-container {
+        height: 100%;
+        width: 53%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .wrapper-2 {
+        position: relative;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.80rem;
+        position: absolute;
+        top: 3rem;
+        left: 7vw;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.80rem;
+        position: absolute;
+        top: 3rem;
+        left: 7.10rem;
+    }
+
+    .scroller {
+        width: 80%;
+        gap: 1rem;
+    }
+
+    .event-card {
+        width: 25%;
+        cursor: pointer;
+        border: solid 1px #444444;
+        padding-bottom: 20px;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+
+    .right-container {
+        width: 30%;
+        height: 100%;
+    }
+
+    .socials_container {
+        gap: 2.50rem
+    }
+
+    .developers_container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .event-card {
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .event-card {
+        width: 19%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .event-card {
+        width: 21%;
+    }
+}

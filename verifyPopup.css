@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', arial;
+}
+
+/* variables */
+:root {
+    --background-color-gray: #E1DEE0;
+    --primary: #9AD0D3;
+    --secondary:#000000;
+    font-size: 16px;
+}
+
+#verifyPopup {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+#verifyPopup .wrapper {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#verifyPopup h2 {
+    margin: 8px;
+    font-size: 27px;
+    color: #333;
+}
+
+#verifyPopup p {
+    margin-bottom: 20px;
+    color: black;
+    text-align: justify
+}
+
+#verifyPopup button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+#verifyPopup button#confirmSubmitButton {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+}
+
+#verifyPopup button#cancelSubmitButton {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 768px) {
+    #popup, #qrPopup {
+        width: 80%;
+        
+    }
+}

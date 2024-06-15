@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --primary: #9AD0D3;
+    --secondary:#000000;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.overlay.visible {
+ opacity: 1;
+ visibility: visible;
+}
+
+
+/* Faculty Number Form */
+.facultyNo-form {
+    visibility: hidden;
+    position: fixed;
+    padding: .80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 250px;
+    width: 280px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+#bx-x {
+    font-size: 1.50rem;
+    position: absolute;
+    right: .20rem;
+    top: .25rem;
+}
+
+.contents-facultyNo-form{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.label-for-facultyNo {
+    align-self: start;
+    margin-top: 1rem;
+}
+
+.contents-facultyNo-form #bx-book {
+    color: gray;
+    position: absolute;
+    left: .50rem;
+    top: 3rem;
+}
+
+.contents-facultyNo-form #bx-lock-alt {
+    color: gray;
+    position: absolute;
+    left: .50rem;
+    top: 7.50rem;
+}
+
+.facultyNo-form input {
+    outline: none;
+    border: solid 1px gray;
+    height: 2rem;
+    padding-left: 1.70rem;
+    width: 100%;
+}
+
+.button-container-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchButton {
+    margin-top: 1rem;
+    height: 2.30rem; 
+    width: 8rem; 
+    border: none;
+    outline: none;
+    background-color: var(--secondary);
+    color: white;
+    letter-spacing: 0.05rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchButton:active {
+    opacity: 0.3;
+}
+
+
+@media screen and (min-width: 375px) {
+    .facultyNo-form {
+        padding: .80rem;
+        height: 250px;
+        width: 300px;
+    }
+
+    .facultyIDVerifyPopup #bx-x {
+        font-size: 1.70rem;
+    }
+
+
+    .label-for-facultyNo {
+        font-size: 1.10rem;
+        align-self: start;
+    }
+
+    .contents-facultyNo-form #bx-book {
+        left: .50rem;
+        top: 3.05rem;
+        font-size: 1.10rem;
+    }
+
+    .contents-facultyNo-form #bx-lock-alt {
+        left: .50rem;
+        top: 7.50rem;
+        font-size: 1.10rem;
+    }
+
+    .facultyNo-form input {
+        height: 2rem;
+        padding-left: 1.70rem;
+        font-size: .90rem;
+        width: 100%;
+    }
+
+
+    #searchButton {
+        height: 2.50rem;
+        width: 8rem;
+        letter-spacing: .05rem;
+        font-size: .80rem;
+    }
+}
+
+
+@media screen and (min-width: 425px) { 
+    .facultyNo-form {
+        padding: .80rem;
+        height: 280px;
+        width: 360px;
+    }
+
+    #bx-x {
+        font-size: 1.80rem;
+    }
+
+    .label-for-facultyNo {
+        font-size: 1.30rem;
+    }
+
+    .contents-facultyNo-form #bx-book {
+        left: .50rem;
+        top: 3.43rem;
+        font-size: 1.20rem;
+    }
+
+    .contents-facultyNo-form #bx-lock-alt {
+        left: .50rem;
+        top: 8.65rem;
+        font-size: 1.20rem;
+    }
+
+    .facultyNo-form input {
+        width: 100%;
+        height: 2.80rem;
+        padding-left: 1.90rem;
+        font-size: 1.05rem;
+    }
+
+    #searchButton {
+        height: 2.60rem;
+        width: 10rem;
+        letter-spacing: .05rem;
+        font-size: .90rem;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teacher Registration Form</title>
+    <link rel="stylesheet" href="registerTeacherForm.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="teacherRegistration.js"></script>
+</head>
+<body>
+    <div class="registerOverlay" id="overlay">
+    
+    <!--Register Teacher Form HTML-->
+        <form id="registrationForm" class="form-register-teacher" >
+            <div class="close-button" id="closeBtn"><i class='bx bx-x'></i></div>
+            <div class="title-container">
+                <h1>Teacher Registration</h1>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bx-book'></i>
+                <input type="text" id="facultyIdNumber" placeholder="Faculty Number" required>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bx-user'></i>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bxs-school'></i>
+                <input type="text" id="department" placeholder="Department" required>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bx-envelope'></i>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bx-lock-alt'></i>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    
+    </div>
+
+    <!-- Verify Teacher Registration -->
+    <div id="verifyPopup" class="overlay">
+        <div class="wrapper-verify-teacher" id="wrapper-verify-teacher">
+            <h1>Verification</h1>
+            <p>Please verify the details provided below.</p>
+            <div class="facultyNo-container">
+                <p><i class='bx bx-book'></i><span id="verifyFacultyNo"></span></p>
+            </div>
+            <div class="fullName-container-teacher">
+                <p><i class='bx bx-user'></i><span id="verifyFullName"></span></p>
+            </div>
+            <div class="facultyDepartment-container">
+                <p><i class='bx bxs-school'></i><span id="verifyDepartment"></span></p>
+            </div>
+            <div class="email-container">
+                <p><i class='bx bx-envelope'></i><span id="verifyEmail"></span></p>
+            </div>
+            <div class="password-container">
+                <p><i class='bx bx-lock-alt'></i><span id="verifyPassword"></span></p>
+            </div>
+            <div id="button-verify-faculty-container">
+                <button id="confirmSubmitButton">Confirm</button>
+                <button id="cancelSubmitButton">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

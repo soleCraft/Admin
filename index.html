@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/ICCT Antipolo BG removed.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hero-section.css">
+    <link rel="stylesheet" href="event-section.css">
+    <link rel="stylesheet" href="footer-section.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="facultyIdForm.css">
+    <link rel="stylesheet" href="registerTeacherForm.css">
+    <link rel="stylesheet" href="verifyPopup.css">
+    <script type="module" src="event.js"></script>
+    <script src="script.js"></script>
+    <title>Admin Page 2.0</title>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <main>
+        <div class="hero-section">
+            <div class="first-container">
+                <div class="logo-container">
+               
+                </div>
+                <div class="title-container">
+                    <h1>Computer Explorer Society</h1>
+                </div>
+                <div class="p-container">
+                    <p>Dedicated for setting an event</p>
+                </div>
+                <div class="buttons-container">
+                    <div class="register-container">
+                        <button id="registerButton">REGISTER</button>
+                    </div>
+                    <div class="login-container">
+                        <button id="loginButton">LOGIN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container">
+               
+            </div>
+        </div>
+
+        <!-- Faculty Number Form -->
+            <form class="facultyNo-form" id="facultyNoForm">
+                <button class="close-facultyNo-icon" id="close-btn"><i class='bx bx-x'></i></button>
+                <div class="contents-facultyNo-form">
+                    <label class="label-for-facultyNo" for="facultyNoInput">Enter faculty number</label>
+                    <i class='bx bx-book' id="bx-book"></i>
+                    <input type="text" id="facultyNoInput" name="facultyNo" placeholder="Faculty No." required>
+
+                    <label class="label-for-facultyNo" for="facultyNoInput">Enter Password</label>
+                    <i class='bx bx-lock-alt' id="bx-lock-alt"></i>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <div class="button-container-search">
+                        <button type="submit" id="searchButton">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        <!-- Create Event Form -->
+            <div class="createEventForm_eventTable" id="createEventForm">
+                <form id="eventForm" class="event_form">
+                    <div id="closeEventForm"><i class='bx bx-x'></i></div>
+                    <div class="eventForm_header_container">
+                        <h1>Create Event</h1>
+                    </div>
+        
+                    <div class="eventName_and_ticketPrice_Container">
+                        <div class="eventName_Container">
+                            <input type="text" id="eventName" name="eventName" required placeholder="Event Name">
+                        </div>
+                        
+                        <div class="ticketPrice_Container">
+                            <input type="number" id="amount" name="amount" required placeholder="Amount">
+                        </div>
+                    </div>
+                    
+                    <div class="dateTime_Container">
+                        <div class="startDateTime_Container">
+                            <label for="startDateTime">Start Date and Time:</label>
+                            <input type="datetime-local" id="startDateTime" name="startDateTime" required>
+                        </div>
+                        
+                        <div class="endDateTime_Container">
+                            <label for="endDateTime">End Date and Time:</label>
+                            <input type="datetime-local" id="endDateTime" name="endDateTime" required>
+                        </div>
+                    </div>
+        
+                    <div class="eventForm_Button_Container">
+                        <button type="submit" id="addButton">Add Event</button>
+                    </div>
+                </form>
+                
+        <!-- Events Table -->
+                <div class="eventTable_Container" id="eventTable_Container">
+                    <table id="eventsTable" class="events_table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Ticket Price</th>
+                                <th>Start date and Time <i>(mm / dd / yyyy)</i></th>
+                                <th>End Date and Time <i>(mm / dd / yyyy)</i></th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                
+                        </tbody>
+                    </table>
+                    <button id="saveAll">Save All Events</button>
+                </div>
+            </div>
+            
+            <div id="verifyPopup" class="popup">
+                <div class="wrapper">
+                    <h2>Verification</h2>
+                    <p>Please verify the details provided below:</p>
+                    <p><strong>Faculty Number: </strong><span id="verifyFacultyNo"></span></p>
+                    <p><strong>Teacher Name: </strong><span id="verifyTeachersName"></span></p>
+                    <p><strong>Event: </strong><span id="verifyEvent"></span></p>
+                    <p><strong>Amount: </strong><span id="verifyAmount"></span></p>
+                    <p><strong>Start of Date & Time: </strong><span id="verifyStaDateTime"></span></p>
+                    <p><strong>End of Date & Time: </strong><span id="verifyEndDateTime"></span></p>
+        
+                    <button id="confirmSubmitButton">Confirm</button>
+                    <button id="cancelSubmitButton">Cancel</button>
+                </div>
+            </div>
+
+    </main>
+
+    
+    <footer>
+        <div class="socials_container">
+            <div class="social_icon_and_name_container">
+                <a href="https://web.facebook.com/ces.icct" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <p>CES</p>
+            </div>
+            <div class="social_icon_and_name_container">
+                <a href="https://web.facebook.com/profile.php?id=100064513457440" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <p>ICCT Main</p>
+            </div>
+            <div class="social_icon_and_name_container">
+                <a href="https://web.facebook.com/profile.php?id=100064153265505" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <p>ICCT Antipolo</p>
+            </div>
+        </div>
+
+        <div class="developers_container">
+            <div class="name_role_container">
+                <p><strong>Joriz Chiong</strong></p>
+                <p>Project Supervisor</p>
+            </div>
+
+            <div class="name_role_container">
+                <p><strong>Cyril John Nonay</strong></p>
+                <p>Project Coordinator</p>
+            </div>
+
+            <div class="name_role_container">
+                <p><strong>Romano Ycoy</strong></p>
+                <p>Front-end Developer</p>
+            </div>
+
+            <div class="name_role_container">
+                <p><strong>Jeremiah Rey</strong></p>
+                <p>Back-end Developer</p>
+            </div>
+
+            <div class="name_role_container">
+                <p><strong>Reiner Felias</strong></p>
+                <p>Assistant Project Coordinator</p>
+            </div>
+        </div>
+        
+        <div class="footer_p_container">
+            <p>Developed by: ICCT Antipolo Campus, 2024.</p>
+        </div>
+    </footer>
+</body>
